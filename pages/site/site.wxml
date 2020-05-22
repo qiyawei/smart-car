@@ -1,0 +1,28 @@
+<view>
+    <image mode="widthFix" src="https://xm-img.gaoshilo.com/b642019-05-24_12553360177.png"></image>
+</view>
+<view>
+    <navigator class="list" url="/pages/details/details?id={{index}}" wx:for="{{markers}}" wx:key="id">
+        <view class="img_tx">
+            <image mode="aspectFit" src="{{item.image}}"></image>
+        </view>
+        <view class="test">
+            <view class="shop_name">{{item.callout.content}}</view>
+            <view class="shop_add">{{item.callout.address}}</view>
+            <view>
+                <image class="icon" mod="aspectFit" src="/static/img/v2/13.png"></image>
+                <text class="icon_test"> {{distance[index]}}</text>
+                <image class="icon iocn_right" mod="aspectFit" src="/static/img/v2/12.png"></image>
+                <text class="icon_test">24小时营业</text>
+            </view>
+        </view>
+        <view class="static" wx:if="{{item.status==1}}">正常营业</view>
+        <view class="static" style="color: yellow;" wx:elif="{{item.status==2}}">设备维护中</view>
+        <view class="static" style="color: yellow;" wx:elif="{{item.status==3}}">设备保养中</view>
+        <view class="static" style="color: yellow;" wx:elif="{{item.status==4}}">即将开业</view>
+        <view class="static" style="color: red;" wx:elif="{{item.status==5}}">低温停业中</view>
+    </navigator>
+</view>
+<view style="height: 84px;">
+    <official-account style="position: fixed; bottom: 0; width: 100%;"></official-account>
+</view>

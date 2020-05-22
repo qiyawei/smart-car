@@ -1,0 +1,215 @@
+
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #181B20;
+}
+
+.index_scan {
+  position: fixed;
+  bottom: 10px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 100px;
+  left: calc(50% - 75px);
+}
+
+.index_scan cover-view {
+  color: #0af9b8;
+  text-align: center;
+  font-size: .75rem;
+  line-height: 40px;
+}
+
+.user_btn,.location_btn {
+  position: fixed;
+  bottom: 30px;
+  padding: 19px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 100px;
+  left: 30px;
+  border: 1px solid #ccc;
+}
+
+.user_btn cover-image,.location_btn cover-image {
+  width: 20px;
+  height: 20px;
+}
+
+.user_btn {
+  right: 30px;
+  left: auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+  color: #0af9b8;
+  width: 100%;
+  background: #181B20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cz {
+  padding-left: 50px;
+}
+
+.my {
+  padding-right: 50px;
+}
+
+.footer_btn {
+  font-size: 12px;
+  width: 50px;
+  text-align: center;
+}
+
+.icon {
+  width: 40%;
+  height: 40%;
+  margin: 0 auto 5px;
+}
+
+.inde_right {
+  position: fixed;
+  right: 20px;
+  bottom: 200px;
+  background: #181B20;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 10px;
+  color: #0af9b8;
+}
+
+.list {
+  padding: 10px 5px;
+}
+
+.icon_r {
+  width: 20px;
+  height: 20px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.a {
+  position: fixed;
+  top: 10px;
+  margin: 0 10px;
+  width: calc(100% - 20px);
+}
+
+.scan_img {
+  position: relative;
+  height: 150px;
+}
+
+.scan_icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bt1 {
+  color: #0af9b8;
+  background-color: #181B20;
+  font-size: 10px;
+}
+
+@-webkit-keyframes myfirst {
+  from {
+      transform: rotate(0);
+  }
+
+  10% {
+      transform: rotate(72deg);
+  }
+
+  20% {
+      transform: rotate(144deg);
+  }
+
+  30% {
+      transform: rotate(216deg);
+  }
+
+  40% {
+      transform: rotate(288deg);
+  }
+
+  50% {
+      transform: rotate(360deg);
+  }
+
+  60% {
+      transform: rotate(432deg);
+  }
+
+  70% {
+      transform: rotate(504deg);
+  }
+
+  80% {
+      transform: rotate(576deg);
+  }
+
+  90% {
+      transform: rotate(648deg);
+  }
+
+  to {
+      transform: rotate(720deg);
+  }
+}
+
+@keyframes myfirst {
+  from {
+      transform: rotate(0);
+  }
+
+  10% {
+      transform: rotate(72deg);
+  }
+
+  20% {
+      transform: rotate(144deg);
+  }
+
+  30% {
+      transform: rotate(216deg);
+  }
+
+  40% {
+      transform: rotate(288deg);
+  }
+
+  50% {
+      transform: rotate(360deg);
+  }
+
+  60% {
+      transform: rotate(432deg);
+  }
+
+  70% {
+      transform: rotate(504deg);
+  }
+
+  80% {
+      transform: rotate(576deg);
+  }
+
+  90% {
+      transform: rotate(648deg);
+  }
+
+  to {
+      transform: rotate(720deg);
+  }
+}

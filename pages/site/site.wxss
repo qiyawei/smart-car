@@ -1,0 +1,73 @@
+page {
+  font-size: 30rpx;
+  background-color: #181B20;
+  color: #fff;
+}
+
+image {
+  width: 100%;
+}
+
+swiper {
+  display: block;
+  height: 90px;
+}
+
+.list {
+  display: flex;
+  font-size: 32rpx;
+  width: calc(100% - 30px);
+  border-bottom: 1px solid #2e2e2e;
+  margin: 0 auto;
+  align-items: center;
+  padding: 8rpx 0;
+}
+
+.img_tx {
+  width: 20%;
+}
+
+.img_tx image {
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.test {
+  width: 55%;
+  padding: 5rpx 30rpx;
+}
+
+.shop_name {
+  color: #97989a;
+  font-size: 30rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shop_add {
+  color: #77787C;
+  font-size: 23rpx;
+  overflow: hidden;
+  line-height: 15px;
+}
+
+.static {
+  width: 25%;
+  color: #35D5AA;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  vertical-align: sub;
+}
+
+.icon_test {
+  color: #5F6366;
+  padding: 0 3px;
+  font-size: 23rpx;
+}
+
+.iocn_right {
+  margin-left: 15px;
+}

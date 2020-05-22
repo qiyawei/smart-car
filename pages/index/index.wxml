@@ -1,0 +1,35 @@
+<map showLocation bindmarkertap="marker_details" enableZoom="true" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" scale="16" style="width: 100%; height: 100%;" subkey="UZABZ-AJ4KG-EEUQ3-IMQQQ-3ZGO5-ULFVL"></map>
+<cover-view bindtap="jump_url" class="a" data-url="/pages/user/storage/storage">
+    <cover-image class="index_img" mode="widthFix" src="https://xm-img.gaoshilo.com/b642019-05-27_19082856628.png"></cover-image>
+</cover-view>
+<cover-view class="footer">
+    <cover-view bindtap="jump_url" class="cz footer_btn" data-url="/pages/user/storage/storage">
+        <cover-image class="icon" mode="widthFix" src="/static/img/v2/03.png"></cover-image>
+        <cover-view>钱包</cover-view>
+    </cover-view>
+    <cover-view bindtap="jump_url" class="my footer_btn" data-url="/pages/user/userIndex/userIndex">
+        <cover-image class="icon" mode="widthFix" src="/static/img/v2/02.png"></cover-image>
+        <cover-view>我的</cover-view>
+    </cover-view>
+</cover-view>
+<cover-view bindtap="scanCode" class="index_scan">
+    <cover-view class="scan_img">
+        <cover-image class="scan_icon_sa" mode="widthFix" src="https://xm-img.gaoshilo.com/sao.png"></cover-image>
+    </cover-view>
+</cover-view>
+<cover-view class="inde_right">
+    <cover-view bindtap="jump_url" class="list" data-url="/pages/site/site">
+        <cover-image class="icon_r" mode="widthFix" src="/static/img/v2/06.png"></cover-image>
+        <cover-view>站点列表</cover-view>
+    </cover-view>
+    <cover-view bindtap="getLocationInfo" class="list">
+        <cover-image class="icon_r" mode="widthFix" src="/static/img/v2/05.png"></cover-image>
+        <cover-view>定位</cover-view>
+    </cover-view>
+    <cover-view class="list">
+        <button bindtap="toast" class="bt1" hoverClass="none" openType="contact">
+            <cover-image class="icon_r" mode="widthFix" src="/static/img/v2/04.png" style="padding-bottom:2px;"></cover-image>
+            <cover-view>客服</cover-view>
+        </button>
+    </cover-view>
+</cover-view>

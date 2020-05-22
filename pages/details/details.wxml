@@ -1,0 +1,62 @@
+<view class="top_tip" wx:if="{{markers.status==2}}">设备正在维护中</view>
+<view class="top_tip" wx:elif="{{markers.status==3}}">设备正在保养中</view>
+<view class="top_tip" wx:elif="{{markers.status==4}}">即将开业，敬请期待</view>
+<view class="top_tip" wx:elif="{{markers.status==5}}">抱歉，由于低温缘故，暂时停业</view>
+<view class="header">
+    <view class="shop_img">
+        <image mod="aspectFit" src="{{markers.image}}"></image>
+    </view>
+    <view class="shop_text">
+        <view class="shop_name">{{markers.serial_no}}</view>
+        <view class="shop_add">{{markers.address}}</view>
+        <view>
+            <image class="icon" mod="aspectFit" src="../../static/img/v2/13.png"></image>
+            <text class="icon_test"> {{distance}}</text>
+            <image class="icon iocn_right" mod="aspectFit" src="../../static/img/v2/12.png"></image>
+            <text class="icon_test">24小时营业</text>
+        </view>
+    </view>
+</view>
+<view class="bq">
+    <view class="bq_con" wx:for="{{markers.label}}" wx:key="item">{{item}}</view>
+</view>
+<view class="fw_xm">服务项目：{{package}}</view>
+<view class="bt">
+    <view class="paidui">
+        <view bindtap="lineup" class="paidui_bt">排队情况</view>
+    </view>
+    <view bindtap="goLocation" class="map">
+        <view class="map_bt"> 地图导航</view>
+    </view>
+</view>
+<view class="zy" wx:if="{{markers.guide.length>0}}">
+    <view style="color:#fff">- 洗车路线指引 -</view>
+    <view wx:for="{{markers.guide}}" wx:key="item">
+        <image class="zy_img" mode="widthFix" src="{{item_img}}?imageView2/2/w/760/h/760/format/jpg/interlace/0/q/760" wx:for="{{item.image}}" wx:for-item="item_img" wx:key="item_img"></image>
+        <view style="font-size:13px;">{{item.content}}</view>
+    </view>
+</view>
+<view class="footer">
+    <view class="footer_title">- 温馨提示 -</view>
+    <view class="footer_con left_sj">{{markers.text}}</view>
+</view>
+<view class="zzz" style="display:{{none}}"></view>
+<view class="lineup" style="display:{{none}}">
+    <view class="lineup_img">
+        <view>
+            <image class="detalis_img" src="{{markers.scene_img}}"></image>
+        </view>
+        <view bindtap="close" class="close">
+            <image class="close_img" mode="aspectFit" src="../../static/img/v2/close.png"></image>
+        </view>
+    </view>
+    <view class="lineup_footer">
+        <view class="shop_name">{{markers.serial_no}}</view>
+        <view class="bq2">
+            <view class="bq2_con" wx:for="{{markers.label}}" wx:key="item">{{item}}</view>
+        </view>
+    </view>
+    <view class="tip">
+        查看排队情况，可合理安排时间避免排队等候哦！
+    </view>
+</view>
